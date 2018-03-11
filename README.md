@@ -1,24 +1,9 @@
-# README
+This app is created for educational purposes only. This app was created as
+part of an effort to gain more experience with Rails Associations as part of
+the online curriculum of The Odin Project.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For more information, please go to:
+https://www.theodinproject.com/courses/ruby-on-rails/lessons/associations
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks,
+Kyle Wu
