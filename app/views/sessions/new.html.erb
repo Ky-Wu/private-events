@@ -1,0 +1,6 @@
+<h1>Sign as an Existing User</h1>
+<%= form_tag("/login", method: "post") do %>
+  <%= label_tag(:user_id, "Enter the id of the User you want to sign in as:") %>
+  <%= text_field_tag(:user_id) %>
+  <%= submit_tag("Sign in") %>
+<% end %>
