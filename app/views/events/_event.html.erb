@@ -1,0 +1,15 @@
+<li style="list-style-type: none">
+  <h2><%= link_to event.title, event %></h2>
+  <h4>
+    Hosted by <%= event.creator.name %>
+    Location: <%= event.location %>
+    Date: <%= event.date %>
+  </h4>
+  <p> <%= event.description %> </p>
+  <h3>Attendees:</h3>
+  <ol>
+    <% event.attendees.each do |attendee| %>
+      <li> <%= attendee.name %> </li>
+    <% end %>
+  </ol>
+</li>

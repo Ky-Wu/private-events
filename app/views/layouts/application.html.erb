@@ -9,10 +9,23 @@
   </head>
 
   <body>
+    <ul id="heading">
     <% if signed_in? %>
-      <p> Currently logged in as: <%= current_user.name %> </p>
-      <p><%= link_to "Logout", logout_path, method: :delete %></p>
+      <li class="heading-item">
+        <%= link_to current_user.name, current_user, class:"heading-link" %>
+      </li>
+      <li class="heading-item">
+        <%= link_to "Logout", logout_path, method: :delete, class: "heading-link" %>
+      </li>
+    <% else %>
+      <li class="heading-item">
+        <%= link_to "Login", login_path, class: "heading-link"%>
+      </li>
     <% end %>
+      <li class="heading-item">
+        <%= link_to "All Events", events_path, class: "heading-link" %>
+      </li>
+    </ul>
     <%= yield %>
   </body>
 </html>

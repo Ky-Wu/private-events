@@ -1,2 +1,22 @@
 <h1><%= @user.name %>'s Profile</h1>
 <h3>Email Address: <%= @user.email %></h3>
+<% if @created_events.any? %>
+  <h2>Created Events:</h2>
+  <ol>
+    <%= render @created_events %>
+  </ol>
+<% end %>
+
+<% if @upcoming_events.any? %>
+  <h2>Created Events:</h2>
+  <ol>
+    <%= render @user.created_events %>
+  </ol>
+<% end %>
+
+<% if @prev_events.any? %>
+  <h2>Created Events:</h2>
+  <ol>
+    <%= render @user.created_events %>
+  </ol>
+<% end %>
