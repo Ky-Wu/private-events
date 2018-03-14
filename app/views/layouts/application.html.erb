@@ -19,6 +19,9 @@
       </li>
     <% else %>
       <li class="heading-item">
+        <%= link_to "Sign Up", new_user_path, class: "heading-link" %>
+      </li>
+      <li class="heading-item">
         <%= link_to "Login", login_path, class: "heading-link"%>
       </li>
     <% end %>
