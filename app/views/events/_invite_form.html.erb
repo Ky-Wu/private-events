@@ -1,0 +1,8 @@
+<%= form_tag(invite_path, method: :post) do %>
+  <%= hidden_field_tag :event_id, @event.id %>
+
+  <%= label_tag :name, "Invite User:" %>
+  <%= text_field_tag :name %>
+
+  <%= submit_tag 'Invite User' %>
+<% end %>
